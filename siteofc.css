@@ -44,6 +44,18 @@ section {
 }
 
 
+a.logo img{
+    width: 110%;
+    height: 120%;
+
+}
+
+.icons img{
+    width: 43%; 
+    height: 343;
+
+}
+
 .navbar {
     margin: 2 6rem;
     font-size: 5rem;
