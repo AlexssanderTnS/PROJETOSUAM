@@ -1,5 +1,5 @@
 :root {
-    --main-color: #f08b06d7;
+    --main-color: #da7e06;
     --black: #000000;
     --border: 0.2rem solid rgb(0, 0, 0);
     font-size: 20px;
@@ -119,8 +119,9 @@ a.camisa img {
     border: 3px solid #000;
 
 
+}
 
-
-
-
+a.camisi img {
+    border: 10px #000000;
+    
 }
