@@ -1,104 +1,64 @@
-:root {
-    --main-color: #a76f06c5;
-    --black: #000000;
-    --border: 0.2rem solid rgb(0, 0, 0);
-    font-size: 20px;
-    --bg: #000000;
-}
-
-
-* {
-    margin: 2;
+*{
     padding: 0;
-    outline: 2;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2 linear;
-    background-color: var(--main-color);
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
 
+body{
+    background-color: #FCBD00;
+    height: 100vh;
 }
 
 
-.body {
-
-    background-color: var(--bg);
-
-}
-
-
-section {
-    padding: 3rem 2rem;
-    margin: 0 auto;
-    max-width: 1400px;
-
-}
-
-
-.header section {
+header.freakbar{
     display: flex;
     align-items: center;
+    gap: 15px;
+    padding: 1%;
+    background-color:#2B2306;
+    flex-direction: row;
     justify-content: space-between;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
+   
 }
 
-
-a.logo img{
-    width: 40%;
-    height: 30%;
-
+div.logo img{
+    height: 130px;
 }
 
-.icons img{
-    width: 43%; 
-    height: 343;
-
+h1{
+    color: #FCBD00;
+    
 }
 
-.navbar {
-    margin: 2 6rem;
-    font-size: 5rem;
-    color: #000000;
+div.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+    justify-content: space-around;
 }
 
-
-
-
-.header {
-    position: fixed;
-    top: 10;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-bottom: var(--border)
+div.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    font-size: 18px;
 }
 
-.navbar a:hover {
-    color: var(--black);
-    border-bottom: 0.1rem solid var(--black);
-    padding-bottom: 0.5rem;
-
-}
-
-
-nav {
-
-    text-align: center;
-    padding: 10px;
-
-}
-
-nav a {
-    color: rgb(0, 0, 0);
-    font-size: 25px;
+div.navbar a{
     text-decoration: none;
-    margin: 0 15px;
-    display: inline-block;
-
-    text-decoration: none;
-    color: black;
-    margin: 0 25px;
-    font-size: 24px;
-
+    text-transform: uppercase;
+    color: #FCBD00;
 }
+
+nav a:hover{
+    color: #f506fdf5;
+    cursor: pointer;
+}
+
+
+

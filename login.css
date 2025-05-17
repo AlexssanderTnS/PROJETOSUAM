@@ -3,14 +3,16 @@
     --fonte-principal: Arial, sans-serif;
     --espaco-entre-itens: 1rem;
     --cor-botao: #2B2306;
-    --cor-place:#77600f;
+    --cor-place: #77600f;
     --cor-fonte: #FFFFFF;
 }
-*{
-  
+
+* {
+
     margin: 0;
     padding: 0;
 }
+
 /* padrão do body*/
 body {
     display: flex;
@@ -21,138 +23,13 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 @media (min-width: 768px) {
-.botao-campo{
-    position: relative;
-    top: -10x;
-    padding-left: 10px;
-    border-radius:99px;
-    width: 298px;
-    height: 48px;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--cor-fonte);
-    background-color: var(--cor-botao);
-    outline: none;
-    
-    box-shadow: 0px 2px 5px 0px #FFF9F9;
-    flex-shrink: 0;
-    
-}
-.botao-function{
-    display: flex;
-    justify-content: center;
-    text-align:  center;
-    align-items: center;
-    padding: 0;
-    color:var(--cor-fonte);
-    width: 88px;
-    height: 48px;
-    border-radius: 99px;
-    background: var(--cor-botao);
-    text-decoration: none;
-    outline: none;
-    box-shadow: none;
-    font-size: 14px;
-    box-shadow: 0px 2px 5px 0px #FFF9F9;
-    flex-shrink: 0;
-    
-}
-/*Remove as imagens do mobile*/
-.imagens, .imagem-ps2, .imagem-atreus, .imagem-kratos, .imagem-ps5, .morcego-direita, .morcego-esquerda, .imagem-logo{
-    display:none;
-}
-.botoes{
-    display:flex;
-    gap: 60px;
-
-}
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-#botao-a{
-    position: relative;
-    
-}
-/* Imagens */
-.imagem-logo-pc{
-    position : relative;
-    
-    width: 208px;
-    height: 208px;
-}
-.imagem-kratos-desk {
-    position: absolute;
-    bottom: -265px;  
-   left: -100px;
-    width: 376px;
-    height: auto;
-    z-index: 1; 
-}
-
-.imagem-anya{
-    position: absolute;
-    left: 600px;
-    width: 300px;
-    top: -150px
-}
-
-.imagem-atreus-desk {
-    position: absolute;
-    bottom: -265px; /* Ajuste a posição para evitar sobreposição */
-    left: 100px;
-    
-    width: 303px;
-    height: auto;
-    z-index: 2; /* Fica acima de Kratos */
-}
-}
-
-
-/* É o site na versão mobile*/
-@media (max-width: 767px){
-    
-/*remove as imagens do desktop*/  
-.imagem-logo-pc, .imagem-atreus-desk, .imagem-kratos-desk{
-    display: none;
-}
-    .formulario{
-
-        display: flex;
-        flex-direction: column;
-        gap:20px;
-        align-items: center;
-        justify-content: center;
-        
-        
-    }
-    #botao-enviar{
-        
-        margin: 0 0 0 30px;
-    }
-    
-    .botoes{
+    .botao-campo {
         position: relative;
-        top: -135px;
-        left: -25px;
-        width: 90%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-
-    }
-    
-    .botao-campo{
-        position: relative;
-        top: -135px;
+        top: -10x;
         padding-left: 10px;
-        border-radius:99px;
+        border-radius: 99px;
         width: 298px;
         height: 48px;
         font-size: 12px;
@@ -160,18 +37,164 @@ body {
         color: var(--cor-fonte);
         background-color: var(--cor-botao);
         outline: none;
-        
+
         box-shadow: 0px 2px 5px 0px #FFF9F9;
         flex-shrink: 0;
-        
+
     }
-    .botao-function{
+
+    .botao-function {
         display: flex;
         justify-content: center;
-        text-align:  center;
+        text-align: center;
         align-items: center;
         padding: 0;
-        color:var(--cor-fonte);
+        color: var(--cor-fonte);
+        width: 88px;
+        height: 48px;
+        border-radius: 99px;
+        background: var(--cor-botao);
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 14px;
+        box-shadow: 0px 2px 5px 0px #FFF9F9;
+        flex-shrink: 0;
+
+    }
+
+    /*Remove as imagens do mobile*/
+    .imagens,
+    .imagem-ps2,
+    .imagem-atreus,
+    .imagem-kratos,
+    .imagem-ps5,
+    .morcego-direita,
+    .morcego-esquerda,
+    .imagem-logo {
+        display: none;
+    }
+
+    .botoes {
+        display: flex;
+        gap: 60px;
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #botao-a {
+        position: relative;
+
+    }
+
+    /* Imagens */
+    .imagem-logo-pc {
+        position: relative;
+
+        width: 208px;
+        height: 208px;
+    }
+
+    .imagem-kratos-desk {
+        position: absolute;
+        bottom: -265px;
+        left: -100px;
+        width: 376px;
+        height: auto;
+        z-index: 1;
+    }
+
+    .imagem-anya {
+        position: absolute;
+        left: 600px;
+        width: 300px;
+        top: -150px
+    }
+
+    .imagem-atreus-desk {
+        position: absolute;
+        bottom: -265px;
+        /* Ajuste a posição para evitar sobreposição */
+        left: 100px;
+
+        width: 303px;
+        height: auto;
+        z-index: 2;
+        /* Fica acima de Kratos */
+    }
+}
+
+
+/* É o site na versão mobile*/
+@media (max-width: 767px) {
+
+    /*remove as imagens do desktop*/
+    .imagem-logo-pc,
+    .imagem-atreus-desk,
+    .imagem-kratos-desk {
+        display: none;
+    }
+
+    .formulario {
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    #botao-enviar {
+
+        margin: 0 0 0 30px;
+    }
+
+    .botoes {
+        position: relative;
+        top: -135px;
+        left: -25px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    .botao-campo {
+        position: relative;
+        top: -135px;
+        padding-left: 10px;
+        border-radius: 99px;
+        width: 298px;
+        height: 48px;
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--cor-fonte);
+        background-color: var(--cor-botao);
+        outline: none;
+
+        box-shadow: 0px 2px 5px 0px #FFF9F9;
+        flex-shrink: 0;
+
+    }
+
+    .botao-function {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        color: var(--cor-fonte);
         width: 88px;
         height: 48px;
         border-radius: 99px;
@@ -183,96 +206,97 @@ body {
         box-shadow: 0px 2px 5px 0px #FFF9F9;
         flex-shrink: 0;
     }
-    
-    }
-    /*Imagens*/
-    
-    .morcego-esquerda{
-        background-image: url("mobile/batman\ e.png");
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 2px;
-        left: 250px;
-        width: 35vw;
-        height: 40vh;
-        background-repeat: no-repeat;
-        z-index: -3; 
-    }
-    .morcego-direita{
-        background-image: url("mobile/batman\ d.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 2px;
-        left: -130px;
-        width: 350px;
-        height: 400px;
-        background-repeat: no-repeat;
-        z-index: -3; 
-    }
-    .imagem-logo{
-        
-        position: relative;
-        top: -190px;
-        width: 222px;
-        height: 222px;
-        border-radius: 50%;
-    }
-    .imagem-ps5{
-        background-image: url("mobile/ps5\ mobile.png");
-        position: absolute;
-        top: 420px;
-        left: -5px;
-        width: 400px;
-        height: 100%;
-        background-repeat: no-repeat;
-        z-index: -2; 
 
-    }
-    .imagem-ps2{
-        bottom: -50px;
-        left: 30px;
-        position:absolute;
-        background-image: url("mobile/controle ps2.png");
-        background-repeat: no-repeat;
-        width: 400px;
-        height: 100%;
-        z-index: -1;
-    }
-    .imagens{
-      position: relative;
-      width: 70%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      
-      
-      border-radius: 15px;
-      
-    }
-    .imagem-kratos{ 
-        position: absolute;
-        bottom: -265px;
-        left: -75px;
-        width: 376px;
-        height: auto;
-        z-index: 2; /* Na frente */
-        
-    }
-    
-    .imagem-atreus{
-        position: absolute;
-        bottom: -265px;
-        right: -65px;
-        width: 303.229px;
-        height: auto;
-        z-index: 1; /* Atrás */
-    }
-    
+}
+
+/*Imagens*/
+
+.morcego-esquerda {
+    background-image: url("mobile/batman\ e.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 250px;
+    width: 35vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    z-index: -3;
+}
+
+.morcego-direita {
+    background-image: url("mobile/batman\ d.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 2px;
+    left: -130px;
+    width: 350px;
+    height: 400px;
+    background-repeat: no-repeat;
+    z-index: -3;
+}
+
+.imagem-logo {
+
+    position: relative;
+    top: -190px;
+    width: 222px;
+    height: 222px;
+    border-radius: 50%;
+}
+
+.imagem-ps5 {
+    background-image: url("mobile/ps5\ mobile.png");
+    position: absolute;
+    top: 420px;
+    left: -5px;
+    width: 400px;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -2;
+
+}
+
+.imagem-ps2 {
+    bottom: -50px;
+    left: 30px;
+    position: absolute;
+    background-image: url("mobile/controle ps2.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 100%;
+    z-index: -1;
+}
+
+.imagens {
+    position: relative;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    display: block;
 
 
+    border-radius: 15px;
 
+}
 
+.imagem-kratos {
+    position: absolute;
+    bottom: -265px;
+    left: -75px;
+    width: 376px;
+    height: auto;
+    z-index: 2;
+    /* Na frente */
 
+}
 
-
+.imagem-atreus {
+    position: absolute;
+    bottom: -265px;
+    right: -65px;
+    width: 303.229px;
+    height: auto;
+    z-index: 1;
+    /* Atrás */
+}
