@@ -20,12 +20,20 @@ header.freakbar{
     background-color:#2B2306;
     flex-direction: row;
     justify-content: space-between;
-   
+    height: 130px;
+
 }
 
 div.logo img{
-    height: 130px;
+    height: 150px;
 }
+
+div.logo img:hover{
+    transform: scale(1.5);
+    
+
+}
+
 
 h1{
     color: #FCBD00;
@@ -60,5 +68,81 @@ nav a:hover{
     cursor: pointer;
 }
 
+.Bprincipal img{
+    height: 450px;
 
 
+}
+
+
+.Bprincipal{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+section.camisas img{
+    height: 330px;
+    width: 300px;
+
+}
+
+section.camisas2 img{
+    height: 330px;
+    width: 300px;
+
+}
+
+
+section.camisas{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 6%;
+    padding: 5%;
+}
+
+section.camisas2{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    gap: 6%;
+}
+
+section.camisas, section.camisas2 p{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p{
+    background-color:#f506fdf5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section p:hover{
+    cursor: pointer;
+}
+
+section.camisas img:hover{
+    transform: scale(1.1);
+
+}
+
+section.camisas2 img:hover{
+    transform: scale(1.1);
+
+}
