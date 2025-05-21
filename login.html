@@ -12,34 +12,41 @@
     <div class="morcego-direita"></div>
     <div class="morcego-esquerda"></div>
 
-    <!--Botões de entrada do email e senha-->
+    <!-- Imagens decorativas -->
     <div class="imagem-ps2"></div>
     <div class="imagem-ps5"></div>
 
+    <!-- Formulário de Login -->
     <div class="formulario">
-        <img src="desktop/logo.png" class="imagem-logo-pc">
-        <img src="mobile/logo2.png" class="imagem-logo">
-        <div><input class="botao-campo" id="login-email" type="text" placeholder="Insira seu e-mail" required></div>
-        <div><input class="botao-campo" id="login-senha" type="password" placeholder="Insira a sua senha" required>
-        </div>
+        <form action="#" method="post">
+            <!-- Logos para diferentes resoluções -->
+            <img src="desktop/logo1.png" class="imagem-logo-pc">
+            <img src="desktop/logo1.png" class="imagem-logo">
 
-        <!-- ignorem o botão de enviar por enquanto ele só vai ser usado na parte do javascript-->
-        <div class="botoes">
-            <input class="botao-function" id="botao-enviar" type="button" value="Enviar">
+            <div>
+                <input class="botao-campo" id="login-email" name="email" type="text" placeholder="Insira seu e-mail" required>
+            </div>
+            <div>
+                <input class="botao-campo" id="login-senha" name="senha" type="password" placeholder="Insira a sua senha" required>
+            </div>
 
-            <!--uma âncora que envia para o site de cadastro-->
-            <a class="botao-function" id="botao-a" href="cadastro.html">Cadastre-se</a>
-
-        </div>
+            <!-- Botões -->
+            <div class="botoes">
+                <input class="botao-function" id="botao-enviar" type="submit" value="Enviar">
+                <a class="botao-function" id="botao-a" href="cadastro.html">Cadastre-se</a>
+            </div>
+        </form>
     </div>
 
+    <!-- Imagens dos personagens -->
     <div class="imagens">
-        <img src=desktop/anyalogin.png class="imagem-anya">
+        <img src="desktop/anyalogin.png" class="imagem-anya">
         <img src="desktop/kratoslogin.png" class="imagem-kratos-desk">
         <img src="desktop/atreuslogin.png" class="imagem-atreus-desk">
         <img src="mobile/kratos.png" class="imagem-kratos">
         <img src="mobile/atreus.png" class="imagem-atreus">
     </div>
+
 </body>
 
 </html>
